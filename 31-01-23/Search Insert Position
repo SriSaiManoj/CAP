@@ -1,0 +1,25 @@
+class Solution(object):class Solution(object):
+    def searchInsert(self, nums, target):
+        s = sorted(nums)
+        for i in s:
+            if i==target:
+                return s.index(i)
+                break
+        if(target not in s):
+            for i in s:
+                if target<i:
+                    return s.index(i)
+        if(target>max(s)):
+            return len(s)
+    def searchInsert(self, nums, target):
+        s = sorted(nums)
+        for i in s:
+            if i==target:
+                return s.index(i)
+                break
+        if(target not in s):
+            for i in s:
+                if target<i:
+                    return s.index(i)
+        if(target>max(s)):
+            return len(s)
