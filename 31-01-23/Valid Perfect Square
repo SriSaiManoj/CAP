@@ -1,0 +1,4 @@
+class Solution(object):
+    def isPerfectSquare(self, num):
+        n=int(math.sqrt(num))
+        return (n*n)==num
