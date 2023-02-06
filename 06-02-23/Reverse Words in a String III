@@ -1,0 +1,15 @@
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        l=[]
+        d = s.split(" ")
+        for i in d:
+            l.append(i)
+        k=[]
+        for i in l:
+            k.append(i[::-1])
+            k.append(" ")
+        a=""
+        for i in k:
+            a+=i
+        res = a.strip()
+        return res
