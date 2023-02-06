@@ -1,0 +1,15 @@
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        q=""
+        if(len(s)>len(t)):
+            m=list(s)
+            n=list(t)
+        else:
+            m=list(t)
+            n=list(s)
+        for i in m:
+            if(i in n):
+                n.remove(i)
+            else:
+                q=q+i
+        return q
